@@ -114,3 +114,5 @@ npm run build
 ```
 
 Tests cover household access isolation, session login, FEFO deduction, expired stock, unit validation, rollback of failed inventory and receipt transactions, duplicate imports, historical data, archive/restore, shopping-list preservation and forecasting across month lengths and leap years.
+
+A browser smoke test is included too. With the local app running, run `npx playwright install chromium` once from `frontend`, then `npm run test:browser`. It creates an isolated sample kitchen, checks every section on desktop and mobile, creates a grocery and generates the shopping list. Screenshot output goes to the ignored `frontend/test-results` folder. This does not contact Gemini.
